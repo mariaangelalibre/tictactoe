@@ -34,9 +34,11 @@ namespace tictactoe1
             // 
             // playbtn
             // 
-            this.playbtn.Location = new System.Drawing.Point(88, 212);
+            this.playbtn.Font = new System.Drawing.Font("Vineta BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.playbtn.Location = new System.Drawing.Point(151, 226);
+            this.playbtn.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.playbtn.Name = "playbtn";
-            this.playbtn.Size = new System.Drawing.Size(241, 56);
+            this.playbtn.Size = new System.Drawing.Size(413, 60);
             this.playbtn.TabIndex = 0;
             this.playbtn.Text = "Play";
             this.playbtn.UseVisualStyleBackColor = true;
@@ -44,12 +46,16 @@ namespace tictactoe1
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 390);
+            this.ClientSize = new System.Drawing.Size(747, 416);
             this.Controls.Add(this.playbtn);
+            this.Font = new System.Drawing.Font("Vineta BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
