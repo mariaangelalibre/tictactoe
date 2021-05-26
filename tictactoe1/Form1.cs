@@ -29,6 +29,7 @@ namespace tictactoe1
             pplay7.Visible = true;
             pplay8.Visible = true;
             playbtn.Visible = false;
+            tictactoepic.Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace tictactoe1
 
         private void pplay_Click(object sender, EventArgs e)
         {
+            pplay.Text = "X";
 
         }
     }
