@@ -1,7 +1,7 @@
 ﻿
 namespace tictactoe1
 {
-    partial class ppppppppppppppppppppppp
+    partial class tform
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace tictactoe1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ppppppppppppppppppppppp));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tform));
             this.playbtn = new System.Windows.Forms.Button();
             this.pplay = new System.Windows.Forms.Button();
             this.pplay1 = new System.Windows.Forms.Button();
@@ -41,13 +41,16 @@ namespace tictactoe1
             this.pplay7 = new System.Windows.Forms.Button();
             this.pplay8 = new System.Windows.Forms.Button();
             this.tictactoepic = new System.Windows.Forms.PictureBox();
+            this.plyr1 = new System.Windows.Forms.TextBox();
+            this.plyr2 = new System.Windows.Forms.TextBox();
+            this.restartbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tictactoepic)).BeginInit();
             this.SuspendLayout();
             // 
             // playbtn
             // 
-            this.playbtn.Font = new System.Drawing.Font("Vineta BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.playbtn.Location = new System.Drawing.Point(39, 196);
+            this.playbtn.Font = new System.Drawing.Font("Lucida Console", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.playbtn.Location = new System.Drawing.Point(23, 196);
             this.playbtn.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.playbtn.Name = "playbtn";
             this.playbtn.Size = new System.Drawing.Size(298, 81);
@@ -58,7 +61,7 @@ namespace tictactoe1
             // 
             // pplay
             // 
-            this.pplay.Location = new System.Drawing.Point(28, 90);
+            this.pplay.Location = new System.Drawing.Point(12, 104);
             this.pplay.Name = "pplay";
             this.pplay.Size = new System.Drawing.Size(102, 86);
             this.pplay.TabIndex = 1;
@@ -68,7 +71,7 @@ namespace tictactoe1
             // 
             // pplay1
             // 
-            this.pplay1.Location = new System.Drawing.Point(28, 12);
+            this.pplay1.Location = new System.Drawing.Point(12, 12);
             this.pplay1.Name = "pplay1";
             this.pplay1.Size = new System.Drawing.Size(102, 86);
             this.pplay1.TabIndex = 2;
@@ -77,7 +80,7 @@ namespace tictactoe1
             // 
             // pplay2
             // 
-            this.pplay2.Location = new System.Drawing.Point(234, 12);
+            this.pplay2.Location = new System.Drawing.Point(228, 12);
             this.pplay2.Name = "pplay2";
             this.pplay2.Size = new System.Drawing.Size(102, 86);
             this.pplay2.TabIndex = 3;
@@ -86,7 +89,7 @@ namespace tictactoe1
             // 
             // pplay3
             // 
-            this.pplay3.Location = new System.Drawing.Point(131, 12);
+            this.pplay3.Location = new System.Drawing.Point(120, 12);
             this.pplay3.Name = "pplay3";
             this.pplay3.Size = new System.Drawing.Size(102, 86);
             this.pplay3.TabIndex = 4;
@@ -95,7 +98,7 @@ namespace tictactoe1
             // 
             // pplay6
             // 
-            this.pplay6.Location = new System.Drawing.Point(131, 90);
+            this.pplay6.Location = new System.Drawing.Point(120, 104);
             this.pplay6.Name = "pplay6";
             this.pplay6.Size = new System.Drawing.Size(102, 86);
             this.pplay6.TabIndex = 7;
@@ -104,7 +107,7 @@ namespace tictactoe1
             // 
             // pplay4
             // 
-            this.pplay4.Location = new System.Drawing.Point(234, 90);
+            this.pplay4.Location = new System.Drawing.Point(228, 104);
             this.pplay4.Name = "pplay4";
             this.pplay4.Size = new System.Drawing.Size(102, 86);
             this.pplay4.TabIndex = 8;
@@ -113,7 +116,7 @@ namespace tictactoe1
             // 
             // pplay5
             // 
-            this.pplay5.Location = new System.Drawing.Point(28, 180);
+            this.pplay5.Location = new System.Drawing.Point(12, 196);
             this.pplay5.Name = "pplay5";
             this.pplay5.Size = new System.Drawing.Size(102, 86);
             this.pplay5.TabIndex = 9;
@@ -122,7 +125,7 @@ namespace tictactoe1
             // 
             // pplay7
             // 
-            this.pplay7.Location = new System.Drawing.Point(131, 180);
+            this.pplay7.Location = new System.Drawing.Point(120, 196);
             this.pplay7.Name = "pplay7";
             this.pplay7.Size = new System.Drawing.Size(102, 86);
             this.pplay7.TabIndex = 10;
@@ -132,7 +135,7 @@ namespace tictactoe1
             // 
             // pplay8
             // 
-            this.pplay8.Location = new System.Drawing.Point(234, 180);
+            this.pplay8.Location = new System.Drawing.Point(228, 196);
             this.pplay8.Name = "pplay8";
             this.pplay8.Size = new System.Drawing.Size(102, 86);
             this.pplay8.TabIndex = 11;
@@ -142,19 +145,53 @@ namespace tictactoe1
             // tictactoepic
             // 
             this.tictactoepic.Image = ((System.Drawing.Image)(resources.GetObject("tictactoepic.Image")));
-            this.tictactoepic.Location = new System.Drawing.Point(30, 82);
+            this.tictactoepic.Location = new System.Drawing.Point(15, 80);
             this.tictactoepic.Name = "tictactoepic";
             this.tictactoepic.Size = new System.Drawing.Size(317, 73);
             this.tictactoepic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tictactoepic.TabIndex = 12;
             this.tictactoepic.TabStop = false;
             // 
-            // ppppppppppppppppppppppp
+            // plyr1
+            // 
+            this.plyr1.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.plyr1.Location = new System.Drawing.Point(26, 299);
+            this.plyr1.Name = "plyr1";
+            this.plyr1.Size = new System.Drawing.Size(139, 20);
+            this.plyr1.TabIndex = 13;
+            this.plyr1.Text = "PLAYER 1 -  X";
+            // 
+            // plyr2
+            // 
+            this.plyr2.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.plyr2.Location = new System.Drawing.Point(180, 299);
+            this.plyr2.Name = "plyr2";
+            this.plyr2.Size = new System.Drawing.Size(139, 20);
+            this.plyr2.TabIndex = 14;
+            this.plyr2.Text = "PLAYER 2 -  O";
+            this.plyr2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // restartbtn
+            // 
+            this.restartbtn.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.restartbtn.Location = new System.Drawing.Point(111, 325);
+            this.restartbtn.Name = "restartbtn";
+            this.restartbtn.Size = new System.Drawing.Size(120, 33);
+            this.restartbtn.TabIndex = 15;
+            this.restartbtn.Text = "RESTART";
+            this.restartbtn.UseVisualStyleBackColor = true;
+            this.restartbtn.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // tform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(365, 305);
+            this.ClientSize = new System.Drawing.Size(341, 370);
+            this.Controls.Add(this.restartbtn);
+            this.Controls.Add(this.plyr2);
+            this.Controls.Add(this.plyr1);
+            this.Controls.Add(this.playbtn);
             this.Controls.Add(this.tictactoepic);
             this.Controls.Add(this.pplay8);
             this.Controls.Add(this.pplay7);
@@ -165,15 +202,16 @@ namespace tictactoe1
             this.Controls.Add(this.pplay2);
             this.Controls.Add(this.pplay1);
             this.Controls.Add(this.pplay);
-            this.Controls.Add(this.playbtn);
             this.Font = new System.Drawing.Font("Vineta BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.MaximizeBox = false;
-            this.Name = "ppppppppppppppppppppppp";
+            this.Name = "tform";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tictactoepic)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -190,6 +228,9 @@ namespace tictactoe1
         private System.Windows.Forms.Button pplay7;
         private System.Windows.Forms.Button pplay8;
         private System.Windows.Forms.PictureBox tictactoepic;
+        private System.Windows.Forms.TextBox plyr1;
+        private System.Windows.Forms.TextBox plyr2;
+        private System.Windows.Forms.Button restartbtn;
     }
 }
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tictactoe1
 {
-    public partial class ppppppppppppppppppppppp : Form
+    public partial class tform : Form
     {
-        public ppppppppppppppppppppppp()
+        public tform()
         {
             InitializeComponent();
         }
@@ -28,8 +28,11 @@ namespace tictactoe1
             pplay6.Visible = true;
             pplay7.Visible = true;
             pplay8.Visible = true;
+            plyr1.Visible = true;
+            plyr2.Visible = true;
             playbtn.Visible = false;
             tictactoepic.Visible = false;
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -50,6 +53,16 @@ namespace tictactoe1
         private void pplay_Click(object sender, EventArgs e)
         {
             pplay.Text = "X";
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
 
         }
     }
