@@ -160,6 +160,7 @@ namespace tictactoe1
             this.plyr1.Size = new System.Drawing.Size(139, 20);
             this.plyr1.TabIndex = 13;
             this.plyr1.Text = "PLAYER 1 -  X";
+            this.plyr1.Visible = false;
             // 
             // plyr2
             // 
@@ -169,6 +170,7 @@ namespace tictactoe1
             this.plyr2.Size = new System.Drawing.Size(139, 20);
             this.plyr2.TabIndex = 14;
             this.plyr2.Text = "PLAYER 2 -  O";
+            this.plyr2.Visible = false;
             this.plyr2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // restartbtn
@@ -180,6 +182,7 @@ namespace tictactoe1
             this.restartbtn.TabIndex = 15;
             this.restartbtn.Text = "RESTART";
             this.restartbtn.UseVisualStyleBackColor = true;
+            this.restartbtn.Visible = false;
             this.restartbtn.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // tform

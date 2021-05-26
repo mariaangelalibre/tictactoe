@@ -30,6 +30,7 @@ namespace tictactoe1
             pplay8.Visible = true;
             plyr1.Visible = true;
             plyr2.Visible = true;
+            restartbtn.Visible = true;
             playbtn.Visible = false;
             tictactoepic.Visible = false;
             
