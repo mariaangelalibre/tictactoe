@@ -228,7 +228,7 @@ namespace tictactoe1
 
         private System.Windows.Forms.Button playbtn;
         private System.Windows.Forms.Button xo4;
-        private System.Windows.Forms.Button xo1;
+        private System.Windows.Forms.Button 2;
         private System.Windows.Forms.Button xo3;
         private System.Windows.Forms.Button xo2;
         private System.Windows.Forms.Button xo5;

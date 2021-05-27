@@ -89,7 +89,19 @@ namespace tictactoe1
 
         private void xo2_Click(object sender, EventArgs e)
         {
-
-        }
+            if (plyr1.ForeColor == Color.Red)
+            {
+                xo2.Text = "X";
+                plyr1.ForeColor = Color.Black;
+                xo2.Enabled = false;
+                plyr2.ForeColor = Color.Red;
+            }
+            else
+            {
+                xo2.Text = "O";
+                plyr1.ForeColor = Color.Black;
+                xo2.Enabled = false;
+                plyr2.ForeColor = Color.Red;
+            }
     }
 }
