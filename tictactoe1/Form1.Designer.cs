@@ -87,6 +87,7 @@ namespace tictactoe1
             this.xo3.TabIndex = 3;
             this.xo3.UseVisualStyleBackColor = true;
             this.xo3.Visible = false;
+            this.xo3.Click += new System.EventHandler(this.xo3_Click);
             // 
             // xo2
             // 
@@ -96,6 +97,7 @@ namespace tictactoe1
             this.xo2.TabIndex = 4;
             this.xo2.UseVisualStyleBackColor = true;
             this.xo2.Visible = false;
+            this.xo2.Click += new System.EventHandler(this.xo2_Click);
             // 
             // xo5
             // 
@@ -174,6 +176,7 @@ namespace tictactoe1
             this.plyr2.Size = new System.Drawing.Size(139, 16);
             this.plyr2.TabIndex = 16;
             this.plyr2.Text = "PLAYER 2 - O";
+            this.plyr2.Visible = false;
             // 
             // plyr1
             // 
@@ -185,6 +188,7 @@ namespace tictactoe1
             this.plyr1.Size = new System.Drawing.Size(139, 16);
             this.plyr1.TabIndex = 16;
             this.plyr1.Text = "PLAYER 1 - X";
+            this.plyr1.Visible = false;
             this.plyr1.Click += new System.EventHandler(this.plyr1_Click);
             // 
             // tform

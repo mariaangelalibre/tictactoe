@@ -41,18 +41,6 @@ namespace tictactoe1
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            if (plyr1.ForeColor == Color.Red)
-            {
-                xo1.Text = "X";
-            }
-            else
-            {
-                xo1.Text = "O";
-            }
-        }
-
         private void button7_Click(object sender, EventArgs e)
         {
 
@@ -64,10 +52,6 @@ namespace tictactoe1
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click_2(object sender, EventArgs e)
         {
@@ -76,7 +60,7 @@ namespace tictactoe1
 
         private void plyr1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void xo1_Click(object sender, EventArgs e)
@@ -84,12 +68,27 @@ namespace tictactoe1
             if (plyr1.ForeColor == Color.Red)
             {
                 xo1.Text = "X";
+                plyr1.ForeColor = Color.Black;
+                xo1.Enabled = false;
+                plyr2.ForeColor = Color.Red;
             }
             else
             {
                 xo1.Text = "O";
+                plyr1.ForeColor = Color.Black;
+                xo1.Enabled = false;
+                plyr2.ForeColor = Color.Red;
             }
 
+        }
+
+        private void xo3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xo2_Click(object sender, EventArgs e)
+        {
 
         }
     }
