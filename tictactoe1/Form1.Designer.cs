@@ -31,7 +31,6 @@ namespace tictactoe1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tform));
             this.playbtn = new System.Windows.Forms.Button();
-            this.xo4 = new System.Windows.Forms.Button();
             this.xo1 = new System.Windows.Forms.Button();
             this.xo3 = new System.Windows.Forms.Button();
             this.xo2 = new System.Windows.Forms.Button();
@@ -44,6 +43,7 @@ namespace tictactoe1
             this.restartbtn = new System.Windows.Forms.Button();
             this.plyr2 = new System.Windows.Forms.Label();
             this.plyr1 = new System.Windows.Forms.Label();
+            this.xo4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tictactoepic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,16 +58,6 @@ namespace tictactoe1
             this.playbtn.Text = "Play";
             this.playbtn.UseVisualStyleBackColor = true;
             this.playbtn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // xo4
-            // 
-            this.xo4.Location = new System.Drawing.Point(12, 104);
-            this.xo4.Name = "xo4";
-            this.xo4.Size = new System.Drawing.Size(102, 86);
-            this.xo4.TabIndex = 1;
-            this.xo4.UseVisualStyleBackColor = true;
-            this.xo4.Visible = false;
-            this.xo4.Click += new System.EventHandler(this.pplay_Click);
             // 
             // xo1
             // 
@@ -97,7 +87,6 @@ namespace tictactoe1
             this.xo2.TabIndex = 4;
             this.xo2.UseVisualStyleBackColor = true;
             this.xo2.Visible = false;
-            this.xo2.Click += new System.EventHandler(this.xo2_Click);
             // 
             // xo5
             // 
@@ -125,6 +114,7 @@ namespace tictactoe1
             this.xo7.TabIndex = 9;
             this.xo7.UseVisualStyleBackColor = true;
             this.xo7.Visible = false;
+            this.xo7.Click += new System.EventHandler(this.xo7_Click);
             // 
             // xo8
             // 
@@ -144,6 +134,7 @@ namespace tictactoe1
             this.xo9.TabIndex = 11;
             this.xo9.UseVisualStyleBackColor = true;
             this.xo9.Visible = false;
+            this.xo9.Click += new System.EventHandler(this.xo9_Click);
             // 
             // tictactoepic
             // 
@@ -191,17 +182,26 @@ namespace tictactoe1
             this.plyr1.Visible = false;
             this.plyr1.Click += new System.EventHandler(this.plyr1_Click);
             // 
+            // xo4
+            // 
+            this.xo4.Location = new System.Drawing.Point(12, 104);
+            this.xo4.Name = "xo4";
+            this.xo4.Size = new System.Drawing.Size(102, 86);
+            this.xo4.TabIndex = 17;
+            this.xo4.UseVisualStyleBackColor = true;
+            this.xo4.Visible = false;
+            this.xo4.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // tform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(341, 370);
+            this.Controls.Add(this.xo4);
             this.Controls.Add(this.plyr1);
             this.Controls.Add(this.plyr2);
             this.Controls.Add(this.restartbtn);
-            this.Controls.Add(this.playbtn);
-            this.Controls.Add(this.tictactoepic);
             this.Controls.Add(this.xo9);
             this.Controls.Add(this.xo8);
             this.Controls.Add(this.xo7);
@@ -210,7 +210,8 @@ namespace tictactoe1
             this.Controls.Add(this.xo2);
             this.Controls.Add(this.xo3);
             this.Controls.Add(this.xo1);
-            this.Controls.Add(this.xo4);
+            this.Controls.Add(this.playbtn);
+            this.Controls.Add(this.tictactoepic);
             this.Font = new System.Drawing.Font("Vineta BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -227,8 +228,7 @@ namespace tictactoe1
         #endregion
 
         private System.Windows.Forms.Button playbtn;
-        private System.Windows.Forms.Button xo4;
-        private System.Windows.Forms.Button 2;
+        private System.Windows.Forms.Button xo1;
         private System.Windows.Forms.Button xo3;
         private System.Windows.Forms.Button xo2;
         private System.Windows.Forms.Button xo5;
@@ -240,6 +240,7 @@ namespace tictactoe1
         private System.Windows.Forms.Button restartbtn;
         private System.Windows.Forms.Label plyr2;
         private System.Windows.Forms.Label plyr1;
+        private System.Windows.Forms.Button xo4;
     }
 }
 
