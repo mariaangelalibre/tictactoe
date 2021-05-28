@@ -33,8 +33,6 @@ namespace tictactoe1
             this.playbtn = new System.Windows.Forms.Button();
             this.xo1 = new System.Windows.Forms.Button();
             this.xo3 = new System.Windows.Forms.Button();
-            this.xo2 = new System.Windows.Forms.Button();
-            this.xo5 = new System.Windows.Forms.Button();
             this.xo6 = new System.Windows.Forms.Button();
             this.xo7 = new System.Windows.Forms.Button();
             this.xo8 = new System.Windows.Forms.Button();
@@ -45,7 +43,15 @@ namespace tictactoe1
             this.plyr1 = new System.Windows.Forms.Label();
             this.xo4 = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.Label();
+            this.xo2 = new System.Windows.Forms.Button();
+            this.xo5 = new System.Windows.Forms.Button();
+            this.opic = new System.Windows.Forms.PictureBox();
+            this.xpic = new System.Windows.Forms.PictureBox();
+            this.xopic = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tictactoepic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xopic)).BeginInit();
             this.SuspendLayout();
             // 
             // playbtn
@@ -81,28 +87,6 @@ namespace tictactoe1
             this.xo3.UseVisualStyleBackColor = true;
             this.xo3.Visible = false;
             this.xo3.Click += new System.EventHandler(this.xo3_Click);
-            // 
-            // xo2
-            // 
-            this.xo2.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.xo2.Location = new System.Drawing.Point(120, 12);
-            this.xo2.Name = "xo2";
-            this.xo2.Size = new System.Drawing.Size(102, 86);
-            this.xo2.TabIndex = 4;
-            this.xo2.UseVisualStyleBackColor = true;
-            this.xo2.Visible = false;
-            this.xo2.Click += new System.EventHandler(this.xo2_Click_1);
-            // 
-            // xo5
-            // 
-            this.xo5.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.xo5.Location = new System.Drawing.Point(120, 104);
-            this.xo5.Name = "xo5";
-            this.xo5.Size = new System.Drawing.Size(102, 86);
-            this.xo5.TabIndex = 7;
-            this.xo5.UseVisualStyleBackColor = true;
-            this.xo5.Visible = false;
-            this.xo5.Click += new System.EventHandler(this.xo5_Click_1);
             // 
             // xo6
             // 
@@ -208,13 +192,68 @@ namespace tictactoe1
             // result
             // 
             this.result.AutoSize = true;
-            this.result.Location = new System.Drawing.Point(248, 334);
+            this.result.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.result.Location = new System.Drawing.Point(42, 196);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(63, 16);
+            this.result.Size = new System.Drawing.Size(0, 65);
             this.result.TabIndex = 18;
-            this.result.Text = "result";
             this.result.Visible = false;
             this.result.Click += new System.EventHandler(this.result_Click);
+            // 
+            // xo2
+            // 
+            this.xo2.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xo2.Location = new System.Drawing.Point(120, 12);
+            this.xo2.Name = "xo2";
+            this.xo2.Size = new System.Drawing.Size(102, 86);
+            this.xo2.TabIndex = 4;
+            this.xo2.UseVisualStyleBackColor = true;
+            this.xo2.Visible = false;
+            this.xo2.Click += new System.EventHandler(this.xo2_Click_1);
+            // 
+            // xo5
+            // 
+            this.xo5.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xo5.Location = new System.Drawing.Point(120, 104);
+            this.xo5.Name = "xo5";
+            this.xo5.Size = new System.Drawing.Size(102, 86);
+            this.xo5.TabIndex = 7;
+            this.xo5.UseVisualStyleBackColor = true;
+            this.xo5.Visible = false;
+            this.xo5.Click += new System.EventHandler(this.xo5_Click_1);
+            // 
+            // opic
+            // 
+            this.opic.Image = ((System.Drawing.Image)(resources.GetObject("opic.Image")));
+            this.opic.Location = new System.Drawing.Point(103, 71);
+            this.opic.Name = "opic";
+            this.opic.Size = new System.Drawing.Size(135, 119);
+            this.opic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opic.TabIndex = 19;
+            this.opic.TabStop = false;
+            this.opic.Visible = false;
+            // 
+            // xpic
+            // 
+            this.xpic.Image = ((System.Drawing.Image)(resources.GetObject("xpic.Image")));
+            this.xpic.Location = new System.Drawing.Point(103, 71);
+            this.xpic.Name = "xpic";
+            this.xpic.Size = new System.Drawing.Size(135, 119);
+            this.xpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.xpic.TabIndex = 20;
+            this.xpic.TabStop = false;
+            this.xpic.Visible = false;
+            // 
+            // xopic
+            // 
+            this.xopic.Image = ((System.Drawing.Image)(resources.GetObject("xopic.Image")));
+            this.xopic.Location = new System.Drawing.Point(72, 71);
+            this.xopic.Name = "xopic";
+            this.xopic.Size = new System.Drawing.Size(197, 119);
+            this.xopic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.xopic.TabIndex = 22;
+            this.xopic.TabStop = false;
+            this.xopic.Visible = false;
             // 
             // tform
             // 
@@ -222,8 +261,8 @@ namespace tictactoe1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(341, 370);
-            this.Controls.Add(this.xo5);
             this.Controls.Add(this.result);
+            this.Controls.Add(this.xo5);
             this.Controls.Add(this.xo4);
             this.Controls.Add(this.plyr1);
             this.Controls.Add(this.plyr2);
@@ -237,6 +276,9 @@ namespace tictactoe1
             this.Controls.Add(this.xo1);
             this.Controls.Add(this.playbtn);
             this.Controls.Add(this.tictactoepic);
+            this.Controls.Add(this.opic);
+            this.Controls.Add(this.xopic);
+            this.Controls.Add(this.xpic);
             this.Font = new System.Drawing.Font("Vineta BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -245,6 +287,9 @@ namespace tictactoe1
             this.Name = "tform";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tictactoepic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xopic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,8 +300,6 @@ namespace tictactoe1
         private System.Windows.Forms.Button playbtn;
         private System.Windows.Forms.Button xo1;
         private System.Windows.Forms.Button xo3;
-        private System.Windows.Forms.Button xo2;
-        private System.Windows.Forms.Button xo5;
         private System.Windows.Forms.Button xo6;
         private System.Windows.Forms.Button xo7;
         private System.Windows.Forms.Button xo8;
@@ -267,6 +310,11 @@ namespace tictactoe1
         private System.Windows.Forms.Label plyr1;
         private System.Windows.Forms.Button xo4;
         private System.Windows.Forms.Label result;
+        private System.Windows.Forms.Button xo2;
+        private System.Windows.Forms.Button xo5;
+        private System.Windows.Forms.PictureBox opic;
+        private System.Windows.Forms.PictureBox xpic;
+        private System.Windows.Forms.PictureBox xopic;
     }
 }
 
