@@ -38,7 +38,6 @@ namespace tictactoe1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -57,17 +56,45 @@ namespace tictactoe1
                 plyr2.ForeColor = Color.Black;
                 xo8.Enabled = false;
             }
-
+            if ((xo7.Text == xo8.Text) && (xo8.Text == xo9.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo2.Text == xo5.Text) && (xo5.Text == xo8.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else
+            {
+                result.Visible = true;
+                result.Text = "TIE";
+            }
         }
-
-        private void pplay_Click(object sender, EventArgs e)
-        {
-        }
-
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-
+            xo1.Text = "";
+            xo2.Text = "";
+            xo3.Text = "";
+            xo4.Text = "";
+            xo5.Text = "";
+            xo6.Text = "";
+            xo7.Text = "";
+            xo8.Text = "";
+            xo9.Text = "";
+            xo1.Enabled = true;
+            xo2.Enabled = true;
+            xo3.Enabled = true;
+            xo4.Enabled = true;
+            xo5.Enabled = true;
+            xo6.Enabled = true;
+            xo7.Enabled = true;
+            xo8.Enabled = true;
+            xo9.Enabled = true;
+            plyr1.ForeColor = Color.Red;
+            plyr2.ForeColor = Color.Black;
         }
 
         private void plyr1_Click(object sender, EventArgs e)
@@ -91,6 +118,35 @@ namespace tictactoe1
                 plyr2.ForeColor = Color.Black;
                 xo1.Enabled = false;
             }
+            if ((xo1.Text == xo2.Text) && (xo2.Text == xo3.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+                xo4.Visible = false;
+                xo1.Visible = false;
+                xo3.Visible = false;
+                xo2.Visible = false;
+                xo6.Visible = false;
+                xo7.Visible = false;
+                xo5.Visible = false;
+                xo8.Visible = false;
+                xo9.Visible = false;
+            }
+            else if ((xo1.Text == xo4.Text) && (xo4.Text == xo7.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo1.Text == xo5.Text) && (xo5.Text == xo9.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else
+            {
+                result.Visible = true;
+                result.Text = "TIE";
+            }
 
         }
 
@@ -109,6 +165,26 @@ namespace tictactoe1
                 plyr1.ForeColor = Color.Red;
                 plyr2.ForeColor = Color.Black;
                 xo3.Enabled = false;
+            }
+            if ((xo1.Text == xo2.Text) && (xo2.Text == xo3.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo3.Text == xo5.Text) && (xo5.Text == xo7.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo3.Text == xo6.Text) && (xo6.Text == xo9.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else
+            {
+                result.Visible = true;
+                result.Text = "TIE";
             }
         }
 
@@ -183,6 +259,26 @@ namespace tictactoe1
                 plyr2.ForeColor = Color.Black;
                 xo7.Enabled = false;
             }
+            if ((xo1.Text == xo4.Text) && (xo4.Text == xo7.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo3.Text == xo5.Text) && (xo5.Text == xo7.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo7.Text == xo8.Text) && (xo8.Text == xo9.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else
+            {
+                result.Visible = true;
+                result.Text = "TIE";
+            }
 
         }
 
@@ -201,6 +297,21 @@ namespace tictactoe1
                 plyr1.ForeColor = Color.Red;
                 plyr2.ForeColor = Color.Black;
                 xo4.Enabled = false;
+            }
+            if ((xo1.Text == xo4.Text) && (xo4.Text == xo7.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo4.Text == xo5.Text) && (xo5.Text == xo6.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else
+            {
+                result.Visible = true;
+                result.Text = "TIE";
             }
 
         }
@@ -221,6 +332,26 @@ namespace tictactoe1
                 plyr2.ForeColor = Color.Black;
                 xo9.Enabled = false;
             }
+            if ((xo1.Text == xo5.Text) && (xo5.Text == xo9.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo3.Text == xo6.Text) && (xo6.Text == xo9.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo7.Text == xo8.Text) && (xo8.Text == xo9.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else
+            {
+                result.Visible = true;
+                result.Text = "TIE";
+            }
 
         }
 
@@ -240,6 +371,21 @@ namespace tictactoe1
                 plyr2.ForeColor = Color.Black;
                 xo2.Enabled = false;
             }
+            if ((xo1.Text == xo2.Text) && (xo2.Text == xo3.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo2.Text == xo5.Text) && (xo5.Text == xo8.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else
+            {
+                result.Visible = true;
+                result.Text = "TIE";
+            }
         }
 
         private void xo5_Click_1(object sender, EventArgs e)
@@ -257,6 +403,31 @@ namespace tictactoe1
                 plyr1.ForeColor = Color.Red;
                 plyr2.ForeColor = Color.Black;
                 xo5.Enabled = false;
+            }
+            if ((xo1.Text == xo5.Text) && (xo5.Text == xo9.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo3.Text == xo5.Text) && (xo5.Text == xo7.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo2.Text == xo5.Text) && (xo5.Text == xo8.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo4.Text == xo5.Text) && (xo5.Text == xo6.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else
+            {
+                result.Visible = true;
+                result.Text = "TIE";
             }
         }
 
@@ -276,6 +447,36 @@ namespace tictactoe1
                 plyr2.ForeColor = Color.Black;
                 xo6.Enabled = false;
             }
+            if ((xo3.Text == xo6.Text) && (xo6.Text == xo9.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else if ((xo4.Text == xo5.Text) && (xo5.Text == xo6.Text))
+            {
+                result.Visible = true;
+                result.Text = "WINNER";
+            }
+            else
+            {
+                result.Visible = true;
+                result.Text = "TIE";
+            }
+        }
+
+        private void result_Click(object sender, EventArgs e)
+        {
+            xo4.Visible = false;
+            xo1.Visible = false;
+            xo3.Visible = false;
+            xo2.Visible = false;
+            xo6.Visible = false;
+            xo7.Visible = false;
+            xo5.Visible = false;
+            xo8.Visible = false;
+            xo9.Visible = false;
+            plyr1.ForeColor = Color.Black;
+            plyr2.ForeColor = Color.Black;
         }
     }
 }

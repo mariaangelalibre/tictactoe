@@ -44,6 +44,7 @@ namespace tictactoe1
             this.plyr2 = new System.Windows.Forms.Label();
             this.plyr1 = new System.Windows.Forms.Label();
             this.xo4 = new System.Windows.Forms.Button();
+            this.result = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tictactoepic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -204,12 +205,25 @@ namespace tictactoe1
             this.xo4.Visible = false;
             this.xo4.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // result
+            // 
+            this.result.AutoSize = true;
+            this.result.Location = new System.Drawing.Point(248, 334);
+            this.result.Name = "result";
+            this.result.Size = new System.Drawing.Size(63, 16);
+            this.result.TabIndex = 18;
+            this.result.Text = "result";
+            this.result.Visible = false;
+            this.result.Click += new System.EventHandler(this.result_Click);
+            // 
             // tform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(341, 370);
+            this.Controls.Add(this.xo5);
+            this.Controls.Add(this.result);
             this.Controls.Add(this.xo4);
             this.Controls.Add(this.plyr1);
             this.Controls.Add(this.plyr2);
@@ -218,7 +232,6 @@ namespace tictactoe1
             this.Controls.Add(this.xo8);
             this.Controls.Add(this.xo7);
             this.Controls.Add(this.xo6);
-            this.Controls.Add(this.xo5);
             this.Controls.Add(this.xo2);
             this.Controls.Add(this.xo3);
             this.Controls.Add(this.xo1);
@@ -253,6 +266,7 @@ namespace tictactoe1
         private System.Windows.Forms.Label plyr2;
         private System.Windows.Forms.Label plyr1;
         private System.Windows.Forms.Button xo4;
+        private System.Windows.Forms.Label result;
     }
 }
 
