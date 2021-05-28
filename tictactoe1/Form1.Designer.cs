@@ -61,6 +61,7 @@ namespace tictactoe1
             // 
             // xo1
             // 
+            this.xo1.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.xo1.Location = new System.Drawing.Point(12, 12);
             this.xo1.Name = "xo1";
             this.xo1.Size = new System.Drawing.Size(102, 86);
@@ -71,6 +72,7 @@ namespace tictactoe1
             // 
             // xo3
             // 
+            this.xo3.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.xo3.Location = new System.Drawing.Point(228, 12);
             this.xo3.Name = "xo3";
             this.xo3.Size = new System.Drawing.Size(102, 86);
@@ -81,6 +83,7 @@ namespace tictactoe1
             // 
             // xo2
             // 
+            this.xo2.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.xo2.Location = new System.Drawing.Point(120, 12);
             this.xo2.Name = "xo2";
             this.xo2.Size = new System.Drawing.Size(102, 86);
@@ -91,6 +94,7 @@ namespace tictactoe1
             // 
             // xo5
             // 
+            this.xo5.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.xo5.Location = new System.Drawing.Point(120, 104);
             this.xo5.Name = "xo5";
             this.xo5.Size = new System.Drawing.Size(102, 86);
@@ -101,6 +105,7 @@ namespace tictactoe1
             // 
             // xo6
             // 
+            this.xo6.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.xo6.Location = new System.Drawing.Point(228, 104);
             this.xo6.Name = "xo6";
             this.xo6.Size = new System.Drawing.Size(102, 86);
@@ -111,6 +116,7 @@ namespace tictactoe1
             // 
             // xo7
             // 
+            this.xo7.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.xo7.Location = new System.Drawing.Point(12, 196);
             this.xo7.Name = "xo7";
             this.xo7.Size = new System.Drawing.Size(102, 86);
@@ -121,6 +127,7 @@ namespace tictactoe1
             // 
             // xo8
             // 
+            this.xo8.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.xo8.Location = new System.Drawing.Point(120, 196);
             this.xo8.Name = "xo8";
             this.xo8.Size = new System.Drawing.Size(102, 86);
@@ -131,6 +138,7 @@ namespace tictactoe1
             // 
             // xo9
             // 
+            this.xo9.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.xo9.Location = new System.Drawing.Point(228, 196);
             this.xo9.Name = "xo9";
             this.xo9.Size = new System.Drawing.Size(102, 86);
@@ -187,6 +195,7 @@ namespace tictactoe1
             // 
             // xo4
             // 
+            this.xo4.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.xo4.Location = new System.Drawing.Point(12, 104);
             this.xo4.Name = "xo4";
             this.xo4.Size = new System.Drawing.Size(102, 86);
