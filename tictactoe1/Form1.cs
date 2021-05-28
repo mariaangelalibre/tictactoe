@@ -45,17 +45,17 @@ namespace tictactoe1
         {
             if (plyr1.ForeColor == Color.Red)
             {
-                xo7.Text = "X";
+                xo8.Text = "X";
                 plyr1.ForeColor = Color.Black;
-                xo7.Enabled = false;
                 plyr2.ForeColor = Color.Red;
+                xo8.Enabled = false;
             }
-            else
+            else if (plyr2.ForeColor == Color.Red)
             {
-                xo7.Text = "O";
-                plyr1.ForeColor = Color.Black;
-                xo7.Enabled = false;
-                plyr2.ForeColor = Color.Red;
+                xo8.Text = "O";
+                plyr1.ForeColor = Color.Red;
+                plyr2.ForeColor = Color.Black;
+                xo8.Enabled = false;
             }
 
         }
@@ -81,15 +81,15 @@ namespace tictactoe1
             {
                 xo1.Text = "X";
                 plyr1.ForeColor = Color.Black;
-                xo1.Enabled = false;
                 plyr2.ForeColor = Color.Red;
+                xo1.Enabled = false;
             }
-            else
+            else if (plyr2.ForeColor == Color.Red)
             {
                 xo1.Text = "O";
-                plyr1.ForeColor = Color.Black;
+                plyr1.ForeColor = Color.Red;
+                plyr2.ForeColor = Color.Black;
                 xo1.Enabled = false;
-                plyr2.ForeColor = Color.Red;
             }
 
         }
@@ -100,15 +100,15 @@ namespace tictactoe1
             {
                 xo3.Text = "X";
                 plyr1.ForeColor = Color.Black;
-                xo3.Enabled = false;
                 plyr2.ForeColor = Color.Red;
+                xo3.Enabled = false;
             }
-            else
+            else if (plyr2.ForeColor == Color.Red)
             {
                 xo3.Text = "O";
-                plyr1.ForeColor = Color.Black;
+                plyr1.ForeColor = Color.Red;
+                plyr2.ForeColor = Color.Black;
                 xo3.Enabled = false;
-                plyr2.ForeColor = Color.Red;
             }
         }
 
@@ -173,15 +173,15 @@ namespace tictactoe1
             {
                 xo7.Text = "X";
                 plyr1.ForeColor = Color.Black;
-                xo7.Enabled = false;
                 plyr2.ForeColor = Color.Red;
+                xo7.Enabled = false;
             }
-            else
+            else if (plyr2.ForeColor == Color.Red)
             {
                 xo7.Text = "O";
-                plyr1.ForeColor = Color.Black;
+                plyr1.ForeColor = Color.Red;
+                plyr2.ForeColor = Color.Black;
                 xo7.Enabled = false;
-                plyr2.ForeColor = Color.Red;
             }
 
         }
@@ -192,15 +192,15 @@ namespace tictactoe1
             {
                 xo4.Text = "X";
                 plyr1.ForeColor = Color.Black;
-                xo4.Enabled = false;
                 plyr2.ForeColor = Color.Red;
+                xo4.Enabled = false;
             }
-            else
+            else if (plyr2.ForeColor == Color.Red)
             {
                 xo4.Text = "O";
-                plyr1.ForeColor = Color.Black;
+                plyr1.ForeColor = Color.Red;
+                plyr2.ForeColor = Color.Black;
                 xo4.Enabled = false;
-                plyr2.ForeColor = Color.Red;
             }
 
         }
@@ -211,17 +211,71 @@ namespace tictactoe1
             {
                 xo9.Text = "X";
                 plyr1.ForeColor = Color.Black;
-                xo9.Enabled = false;
                 plyr2.ForeColor = Color.Red;
+                xo9.Enabled = false;
             }
-            else
+            else if (plyr2.ForeColor == Color.Red)
             {
                 xo9.Text = "O";
-                plyr1.ForeColor = Color.Black;
+                plyr1.ForeColor = Color.Red;
+                plyr2.ForeColor = Color.Black;
                 xo9.Enabled = false;
-                plyr2.ForeColor = Color.Red;
             }
 
+        }
+
+        private void xo2_Click_1(object sender, EventArgs e)
+        {
+            if (plyr1.ForeColor == Color.Red)
+            {
+                xo2.Text = "X";
+                plyr1.ForeColor = Color.Black;
+                plyr2.ForeColor = Color.Red;
+                xo2.Enabled = false;
+            }
+            else if (plyr2.ForeColor == Color.Red)
+            {
+                xo2.Text = "O";
+                plyr1.ForeColor = Color.Red;
+                plyr2.ForeColor = Color.Black;
+                xo2.Enabled = false;
+            }
+        }
+
+        private void xo5_Click_1(object sender, EventArgs e)
+        {
+            if (plyr1.ForeColor == Color.Red)
+            {
+                xo5.Text = "X";
+                plyr1.ForeColor = Color.Black;
+                plyr2.ForeColor = Color.Red;
+                xo5.Enabled = false;
+            }
+            else if (plyr2.ForeColor == Color.Red)
+            {
+                xo5.Text = "O";
+                plyr1.ForeColor = Color.Red;
+                plyr2.ForeColor = Color.Black;
+                xo5.Enabled = false;
+            }
+        }
+
+        private void xo6_Click_1(object sender, EventArgs e)
+        {
+            if (plyr1.ForeColor == Color.Red)
+            {
+                xo6.Text = "X";
+                plyr1.ForeColor = Color.Black;
+                plyr2.ForeColor = Color.Red;
+                xo6.Enabled = false;
+            }
+            else if (plyr2.ForeColor == Color.Red)
+            {
+                xo6.Text = "O";
+                plyr1.ForeColor = Color.Red;
+                plyr2.ForeColor = Color.Black;
+                xo6.Enabled = false;
+            }
         }
     }
 }

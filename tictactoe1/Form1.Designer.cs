@@ -87,6 +87,7 @@ namespace tictactoe1
             this.xo2.TabIndex = 4;
             this.xo2.UseVisualStyleBackColor = true;
             this.xo2.Visible = false;
+            this.xo2.Click += new System.EventHandler(this.xo2_Click_1);
             // 
             // xo5
             // 
@@ -96,6 +97,7 @@ namespace tictactoe1
             this.xo5.TabIndex = 7;
             this.xo5.UseVisualStyleBackColor = true;
             this.xo5.Visible = false;
+            this.xo5.Click += new System.EventHandler(this.xo5_Click_1);
             // 
             // xo6
             // 
@@ -105,6 +107,7 @@ namespace tictactoe1
             this.xo6.TabIndex = 8;
             this.xo6.UseVisualStyleBackColor = true;
             this.xo6.Visible = false;
+            this.xo6.Click += new System.EventHandler(this.xo6_Click_1);
             // 
             // xo7
             // 
