@@ -152,6 +152,10 @@ namespace tictactoe1
             result.Visible = false;
             plyr1.ForeColor = Color.Red;
             plyr2.ForeColor = Color.Black;
+            xpic.Visible = false;
+            opic.Visible = false;
+            xopic.Visible = false;
+            tieresult.Visible = false;
         }
 
         private void plyr1_Click(object sender, EventArgs e)
@@ -707,7 +711,6 @@ namespace tictactoe1
                 plyr1.ForeColor = Color.Black;
                 plyr2.ForeColor = Color.Black;
             }
-
         }
 
         private void xo2_Click_1(object sender, EventArgs e)
