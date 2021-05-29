@@ -150,7 +150,7 @@ namespace tictactoe1
             this.restartbtn.Name = "restartbtn";
             this.restartbtn.Size = new System.Drawing.Size(120, 33);
             this.restartbtn.TabIndex = 15;
-            this.restartbtn.Text = "RESULT";
+            this.restartbtn.Text = "RESTART";
             this.restartbtn.UseVisualStyleBackColor = true;
             this.restartbtn.Visible = false;
             this.restartbtn.Click += new System.EventHandler(this.button1_Click_2);
@@ -195,7 +195,7 @@ namespace tictactoe1
             this.result.AutoSize = true;
             this.result.BackColor = System.Drawing.Color.White;
             this.result.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.result.Location = new System.Drawing.Point(39, 178);
+            this.result.Location = new System.Drawing.Point(39, 193);
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(262, 65);
             this.result.TabIndex = 18;
@@ -263,7 +263,7 @@ namespace tictactoe1
             // 
             this.tieresult.AutoSize = true;
             this.tieresult.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tieresult.Location = new System.Drawing.Point(98, 178);
+            this.tieresult.Location = new System.Drawing.Point(93, 196);
             this.tieresult.Name = "tieresult";
             this.tieresult.Size = new System.Drawing.Size(145, 65);
             this.tieresult.TabIndex = 23;
