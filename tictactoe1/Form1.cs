@@ -857,7 +857,6 @@ namespace tictactoe1
             if ((xo3.Text == xo6.Text) && (xo6.Text == xo9.Text))
             {
                 result.Visible = true;
-                result.Text = "WINNER";
                 xo4.Visible = false;
                 xo1.Visible = false;
                 xo3.Visible = false;
@@ -867,11 +866,20 @@ namespace tictactoe1
                 xo5.Visible = false;
                 xo8.Visible = false;
                 xo9.Visible = false;
+                plyr1.ForeColor = Color.Black;
+                plyr2.ForeColor = Color.Black;
+                if (xo6.Text == "O")
+                {
+                    opic.Visible = true;
+                }
+                else if (xo6.Text == "X")
+                {
+                    xpic.Visible = true;
+                }
             }
             else if ((xo4.Text == xo5.Text) && (xo5.Text == xo6.Text))
             {
                 result.Visible = true;
-                result.Text = "WINNER";
                 xo4.Visible = false;
                 xo1.Visible = false;
                 xo3.Visible = false;
@@ -881,6 +889,16 @@ namespace tictactoe1
                 xo5.Visible = false;
                 xo8.Visible = false;
                 xo9.Visible = false;
+                plyr1.ForeColor = Color.Black;
+                plyr2.ForeColor = Color.Black;
+                if (xo6.Text == "O")
+                {
+                    opic.Visible = true;
+                }
+                else if (xo6.Text == "X")
+                {
+                    xpic.Visible = true;
+                }
             }
             else if (xo1.Text != "" && xo2.Text != "" && xo3.Text != "" && xo4.Text != "" && xo5.Text != "" && xo6.Text != "" && xo7.Text != "" && xo8.Text != "" && xo9.Text != "" && result.Visible == false)
             {
