@@ -48,6 +48,7 @@ namespace tictactoe1
             this.opic = new System.Windows.Forms.PictureBox();
             this.xpic = new System.Windows.Forms.PictureBox();
             this.xopic = new System.Windows.Forms.PictureBox();
+            this.tieresult = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tictactoepic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpic)).BeginInit();
@@ -149,7 +150,7 @@ namespace tictactoe1
             this.restartbtn.Name = "restartbtn";
             this.restartbtn.Size = new System.Drawing.Size(120, 33);
             this.restartbtn.TabIndex = 15;
-            this.restartbtn.Text = "RESTART";
+            this.restartbtn.Text = "RESULT";
             this.restartbtn.UseVisualStyleBackColor = true;
             this.restartbtn.Visible = false;
             this.restartbtn.Click += new System.EventHandler(this.button1_Click_2);
@@ -192,11 +193,14 @@ namespace tictactoe1
             // result
             // 
             this.result.AutoSize = true;
+            this.result.BackColor = System.Drawing.Color.White;
             this.result.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.result.Location = new System.Drawing.Point(42, 196);
+            this.result.Location = new System.Drawing.Point(39, 178);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(0, 65);
+            this.result.Size = new System.Drawing.Size(262, 65);
             this.result.TabIndex = 18;
+            this.result.Text = "WINNER";
+            this.result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.result.Visible = false;
             this.result.Click += new System.EventHandler(this.result_Click);
             // 
@@ -255,12 +259,24 @@ namespace tictactoe1
             this.xopic.TabStop = false;
             this.xopic.Visible = false;
             // 
+            // tieresult
+            // 
+            this.tieresult.AutoSize = true;
+            this.tieresult.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tieresult.Location = new System.Drawing.Point(98, 178);
+            this.tieresult.Name = "tieresult";
+            this.tieresult.Size = new System.Drawing.Size(145, 65);
+            this.tieresult.TabIndex = 23;
+            this.tieresult.Text = "TIE";
+            this.tieresult.Visible = false;
+            // 
             // tform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(341, 370);
+            this.Controls.Add(this.tieresult);
             this.Controls.Add(this.result);
             this.Controls.Add(this.xo5);
             this.Controls.Add(this.xo4);
@@ -315,6 +331,7 @@ namespace tictactoe1
         private System.Windows.Forms.PictureBox opic;
         private System.Windows.Forms.PictureBox xpic;
         private System.Windows.Forms.PictureBox xopic;
+        private System.Windows.Forms.Label tieresult;
     }
 }
 
