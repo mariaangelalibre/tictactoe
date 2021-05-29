@@ -150,7 +150,7 @@ namespace tictactoe1
             this.restartbtn.Name = "restartbtn";
             this.restartbtn.Size = new System.Drawing.Size(120, 33);
             this.restartbtn.TabIndex = 15;
-            this.restartbtn.Text = "RESTART";
+            this.restartbtn.Text = "RESTAR";
             this.restartbtn.UseVisualStyleBackColor = true;
             this.restartbtn.Visible = false;
             this.restartbtn.Click += new System.EventHandler(this.button1_Click_2);
