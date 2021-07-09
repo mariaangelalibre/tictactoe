@@ -183,19 +183,19 @@ namespace tictactoe1
             }
             if (xo1.Text != "" && xo2.Text != "" && xo3.Text != "" && xo4.Text != "" && xo5.Text != "" && xo6.Text != "" && xo7.Text != "" && xo8.Text != "" && xo9.Text != "" && result.Visible == false)
             { 
-                    tieresult.Visible = true;
-                    xo4.Visible = false;
-                    xo1.Visible = false;
-                    xo3.Visible = false;
-                    xo2.Visible = false;
-                    xo6.Visible = false;
-                    xo7.Visible = false;
-                    xo5.Visible = false;
-                    xo8.Visible = false;
-                    xo9.Visible = false;
-                    xopic.Visible = true;
-                    plyr1.ForeColor = Color.Black;
-                    plyr2.ForeColor = Color.Black;
+                tieresult.Visible = true;
+                xo4.Visible = false;
+                xo1.Visible = false;
+                xo3.Visible = false;
+                xo2.Visible = false;
+                xo6.Visible = false;
+                xo7.Visible = false;
+                xo5.Visible = false;
+                xo8.Visible = false;
+                xo9.Visible = false;
+                xopic.Visible = true;
+                plyr1.ForeColor = Color.Black;
+                plyr2.ForeColor = Color.Black;
             }
         }
 
@@ -227,7 +227,6 @@ namespace tictactoe1
             xopic.Visible = false;
             tieresult.Visible = false;
         }
-
         private void playbtn_Click(object sender, EventArgs e)
         {
             xo4.Visible = true;
@@ -247,7 +246,6 @@ namespace tictactoe1
             plyr1.ForeColor = Color.Red;
             exitbtn.Visible = true;
         }
-
         private void generateResult()
         {
             result.Visible = true;
@@ -263,7 +261,6 @@ namespace tictactoe1
             plyr1.ForeColor = Color.Black;
             plyr2.ForeColor = Color.Black;
         }
-
         private void exitbtn_Click(object sender, EventArgs e)
         {
             this.Close();
