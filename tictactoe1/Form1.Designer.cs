@@ -49,6 +49,7 @@ namespace tictactoe1
             this.xpic = new System.Windows.Forms.PictureBox();
             this.xopic = new System.Windows.Forms.PictureBox();
             this.tieresult = new System.Windows.Forms.Label();
+            this.exitbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tictactoepic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpic)).BeginInit();
@@ -65,7 +66,7 @@ namespace tictactoe1
             this.playbtn.TabIndex = 0;
             this.playbtn.Text = "Play";
             this.playbtn.UseVisualStyleBackColor = true;
-            this.playbtn.Click += new System.EventHandler(this.button1_Click);
+            this.playbtn.Click += new System.EventHandler(this.playbtn_Click);
             // 
             // xo1
             // 
@@ -76,7 +77,7 @@ namespace tictactoe1
             this.xo1.TabIndex = 2;
             this.xo1.UseVisualStyleBackColor = true;
             this.xo1.Visible = false;
-            this.xo1.Click += new System.EventHandler(this.xo1_Click);
+            this.xo1.Click += new System.EventHandler(this.xos);
             // 
             // xo3
             // 
@@ -87,7 +88,7 @@ namespace tictactoe1
             this.xo3.TabIndex = 3;
             this.xo3.UseVisualStyleBackColor = true;
             this.xo3.Visible = false;
-            this.xo3.Click += new System.EventHandler(this.xo3_Click);
+            this.xo3.Click += new System.EventHandler(this.xos);
             // 
             // xo6
             // 
@@ -98,7 +99,7 @@ namespace tictactoe1
             this.xo6.TabIndex = 8;
             this.xo6.UseVisualStyleBackColor = true;
             this.xo6.Visible = false;
-            this.xo6.Click += new System.EventHandler(this.xo6_Click_1);
+            this.xo6.Click += new System.EventHandler(this.xos);
             // 
             // xo7
             // 
@@ -109,7 +110,7 @@ namespace tictactoe1
             this.xo7.TabIndex = 9;
             this.xo7.UseVisualStyleBackColor = true;
             this.xo7.Visible = false;
-            this.xo7.Click += new System.EventHandler(this.xo7_Click);
+            this.xo7.Click += new System.EventHandler(this.xos);
             // 
             // xo8
             // 
@@ -120,7 +121,7 @@ namespace tictactoe1
             this.xo8.TabIndex = 10;
             this.xo8.UseVisualStyleBackColor = true;
             this.xo8.Visible = false;
-            this.xo8.Click += new System.EventHandler(this.button7_Click);
+            this.xo8.Click += new System.EventHandler(this.xos);
             // 
             // xo9
             // 
@@ -131,7 +132,7 @@ namespace tictactoe1
             this.xo9.TabIndex = 11;
             this.xo9.UseVisualStyleBackColor = true;
             this.xo9.Visible = false;
-            this.xo9.Click += new System.EventHandler(this.xo9_Click);
+            this.xo9.Click += new System.EventHandler(this.xos);
             // 
             // tictactoepic
             // 
@@ -150,10 +151,10 @@ namespace tictactoe1
             this.restartbtn.Name = "restartbtn";
             this.restartbtn.Size = new System.Drawing.Size(120, 33);
             this.restartbtn.TabIndex = 15;
-            this.restartbtn.Text = "RESTAR";
+            this.restartbtn.Text = "RESTART";
             this.restartbtn.UseVisualStyleBackColor = true;
             this.restartbtn.Visible = false;
-            this.restartbtn.Click += new System.EventHandler(this.button1_Click_2);
+            this.restartbtn.Click += new System.EventHandler(this.restartbtn_Click);
             // 
             // plyr2
             // 
@@ -177,7 +178,6 @@ namespace tictactoe1
             this.plyr1.TabIndex = 16;
             this.plyr1.Text = "PLAYER 1 - X";
             this.plyr1.Visible = false;
-            this.plyr1.Click += new System.EventHandler(this.plyr1_Click);
             // 
             // xo4
             // 
@@ -188,7 +188,7 @@ namespace tictactoe1
             this.xo4.TabIndex = 17;
             this.xo4.UseVisualStyleBackColor = true;
             this.xo4.Visible = false;
-            this.xo4.Click += new System.EventHandler(this.button1_Click_1);
+            this.xo4.Click += new System.EventHandler(this.xos);
             // 
             // result
             // 
@@ -202,7 +202,6 @@ namespace tictactoe1
             this.result.Text = "WINNER";
             this.result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.result.Visible = false;
-            this.result.Click += new System.EventHandler(this.result_Click);
             // 
             // xo2
             // 
@@ -213,7 +212,7 @@ namespace tictactoe1
             this.xo2.TabIndex = 4;
             this.xo2.UseVisualStyleBackColor = true;
             this.xo2.Visible = false;
-            this.xo2.Click += new System.EventHandler(this.xo2_Click_1);
+            this.xo2.Click += new System.EventHandler(this.xos);
             // 
             // xo5
             // 
@@ -224,7 +223,7 @@ namespace tictactoe1
             this.xo5.TabIndex = 7;
             this.xo5.UseVisualStyleBackColor = true;
             this.xo5.Visible = false;
-            this.xo5.Click += new System.EventHandler(this.xo5_Click_1);
+            this.xo5.Click += new System.EventHandler(this.xos);
             // 
             // opic
             // 
@@ -270,12 +269,25 @@ namespace tictactoe1
             this.tieresult.Text = "TIE";
             this.tieresult.Visible = false;
             // 
+            // exitbtn
+            // 
+            this.exitbtn.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.exitbtn.Location = new System.Drawing.Point(124, 364);
+            this.exitbtn.Name = "exitbtn";
+            this.exitbtn.Size = new System.Drawing.Size(96, 29);
+            this.exitbtn.TabIndex = 24;
+            this.exitbtn.Text = "EXIT";
+            this.exitbtn.UseVisualStyleBackColor = true;
+            this.exitbtn.Visible = false;
+            this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
+            // 
             // tform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(341, 370);
+            this.ClientSize = new System.Drawing.Size(341, 397);
+            this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.tieresult);
             this.Controls.Add(this.result);
             this.Controls.Add(this.xo5);
@@ -301,7 +313,6 @@ namespace tictactoe1
             this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.MaximizeBox = false;
             this.Name = "tform";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tictactoepic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpic)).EndInit();
@@ -332,6 +343,7 @@ namespace tictactoe1
         private System.Windows.Forms.PictureBox xpic;
         private System.Windows.Forms.PictureBox xopic;
         private System.Windows.Forms.Label tieresult;
+        private System.Windows.Forms.Button exitbtn;
     }
 }
 
